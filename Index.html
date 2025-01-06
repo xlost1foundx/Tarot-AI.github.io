@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Footer with Images and Particles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: noteworthy;
+            color: white;
+            background: linear-gradient(45deg, #ff0080, #00bcd4, #8e2de2, #4a00e0);
+            background-size: 300% 300%;
+            animation: gradient 10s ease infinite;
+            position: relative;
+            overflow: auto;
+        text-align: center; 
+justify-content: center;
+}
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .main-header {
+            font-size: 1em;
+            color: #fff;
+            text-shadow: 0 0 5px #fff, 0 0 10px #ff00cc, 0 0 15px #ff00cc;
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 30px #ff00cc; }
+            100% { text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #ff00cc; }
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            position: relative;
+        }
+        iframe {
+            border-radius: 10px;
+            border: none;
+            width: 80%;
+            height: 539px;
+        }
+        #unique-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        #unique-button:hover {
+            background-color: #005f73;
+        }
+        .particles-js-canvas-el {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        footer {
+justify-items: center;
+justify-content: center;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            align-items: center;
+            padding: 16px: 0;
+            background-color: transparent;
+width: 99%;
+            border-top: 3px solid #ff00cc;
+            margin-top: 40px;
+        }
+        footer img {
+            width: 70px;
+            height: 70px;
+            border: 3px solid #ff00cc;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        footer img:hover {
+            transform: scale(1.1);
+        }
+        .legal-note {
+            position: absolute;
+            bottom: -30px;
+            font-size: 0.4em;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Your Destiny Awaits</h1>
+    </header>
+    <div id="particles-js" class="particles-js-canvas-el"></div>
+    <section class="content-container">
+        <iframe id="JotFormIFrame-250027630243041"
+            title="Tarot reading"
+ onload="window.parent.scrollTo(0,0)"
+            allowtransparency="true"
+            allow="geolocation; microphone; camera; fullscreen"
+            src="https://form.jotform.com/250027630243041"
+            frameborder="0"
+            style="min-width:100%;max-width:100%;height:539px;border:none;"
+            scrolling="no"
+        >
+        </iframe>
+    </section>
+    <footer>
+        <img src="https://cvws.icloud-content.com/B/AZL5C4HabBGg_Nx6k5bTFyBxRrpBAW2Cq8N4jJVLC5iXg16mXMOoCG-Q/IMG_0094+Medium.png?o=AlUiK_jo4jmEnGrGQAo5jfRVjiXev33mqFmZYdZM3GcD&v=1&x=3&a=CAoghUC9Xj1C0T7GDeMxtsbgtwRPoSGydu8C9Wz-o6ts-o0SbxCQ2a6AwzIYkLaKgsMyIgEAUgRxRrpBWgSoCG-QaicYj6SPYRp5q21bz-TsL200CZRKedvZAMimUrzioiiIyjTM-GgcJhJyJ1xVsp2hX6NSv3x3AI2MCv58W8JIfiaS3T5ZXD2FEBJW-7aQLLda4g&e=1735976459&fl=&r=409df62e-ba06-44df-8603-09456e6d6671-1&k=RzREtn3R-tmi30fjl-Uv_g&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=140&s=Vm9BxoP8fK1N8NeM5wYKIlxh7JY&cd=i" alt="Image 1">
+        <img src="https://cvws.icloud-content.com/B/ASOz3uhvbUm5KMPKEUxHu3mAXAeBAXZzzILFzde5nKGkEzw4yvwF7vXm/IMG_0092+Medium.png?o=An9PEJ1B6Ny4r84-mYpHDYDFl2q9hAFFrJv6xZCjN-k1&v=1&x=3&a=CAogxxIzA5KlKs2xK9WQDEGe-AeFCbfkbXkjgqz1Klfxap4SbxDO86-AwzIYztCLgsMyIgEAUgSAXAeBWgQF7vXmaidJcz9PcAlUXl7LHyQUJxQMLMzRVdf46NfxdjdyFA8FV3so5-dTgOZyJ-alz6egLzrBRehKOhfMQj0iJPiejH2FPPwRIZx5wX4U2SIlEkh7SA&e=1735976478&fl=&r=0f4b0bd2-1067-4025-bd19-b5af99b023e6-1&k=iv3bQJD7ruG65WXPBeUMKQ&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=140&s=DiC5xhN2XSZ660vf5Z1zw3WnPog&cd=i" alt="Image 2">
+        <img src="https://cvws.icloud-content.com/B/AUbsBqBo5O4XdJJ3K5CyAjQc3c98AW16BgCL7JOrXj4RYIUMJCTtvyTU/IMG_0095+Medium.png?o=AlBurL3kGAA3XTRCDQsocTFC-kTuxypq17PKWUq7u9oq&v=1&x=3&a=CAoglOjcI7Vllxc0BV8TehzeVPvz7qioUyjxNGyPLW656NQSbxDApayAwzIYwIKIgsMyIgEAUgQc3c98WgTtvyTUaiet9D8Eflj0LnKuur0brvRF0LodDr02KOGBln7TYkKlu-nFN5dKZzVyJ6pAJS0w181n3m-c8JXiSn8P7zEp4Namb5fhVf7HTjptpSDdo-KlfA&e=1735976419&fl=&r=b45aa186-17e4-4629-bea7-62161b6b7a62-1&k=ki_j_G5Zk5fmUqNuUtS0VA&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=140&s=Gjuf2xVJpfKm9SdyWeXVf-WkYnM&cd=i" alt="Image 3">
+        <img src="https://cvws.icloud-content.com/B/AX5Amh3Lgs8omcX54gn7eBYb6Lv7AUY5Ce4XV_ElBmUZyXOFxbYe-EqD/IMG_0093+Medium.png?o=AurTUiDs_-LMSXEWiTv4OTuJsI1-dTyA6KBRzMMmrVEu&v=1&x=3&a=CAogsTfYJ3PMBNVVwNVKgC3ulIIfn0BTdB6ab7G_3FVbMl4SbxDO7bCAwzIYzsqMgsMyIgEAUgQb6Lv7WgQe-EqDaid7VM6ZzywUREcpojfHqztMZT9bRA9aXa_HvrYtUf1lbR7yKiXK1MxyJznGnt7X7NKBsehn5P9X0sfaAg7W88dm9FIPql__QRE9Nix276qv4g&e=1735976494&fl=&r=0b2aae1c-748e-45b2-9ac8-08ece2381442-1&k=nIFjql8GbrVV2LE8pjm4Tg&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=140&s=sFwdOpSE7a_ypwbxUCfOv7xqfvI&cd=i" alt="Image 4">
+        <img src="https://cvws.icloud-content.com/B/ARsYS3o0LjyN4qopWdmkDOBUjnjyAR4IA9p9YWyG5K7lN9qM3Gokv8aF/IMG_0096+Medium.png?o=AnVDSiC3syhQsSO4C4nGkCxbFXV6aWy1eAmZ0wL_IkDD&v=1&x=3&a=CAogZAjKzs8l7pBjnaQWkReaK7fgXB1zSzpzp2uEIXWyI5oSbxCuxrOAwzIYrqOPgsMyIgEAUgRUjnjyWgQkv8aFaic11Z66uVznfIvkl27iYjN9rXdSB-gs_xcJlW_J7cx2Mh327xJZO4hyJ1XE_QakwOnxuu45CRkA22GEVUD0whzlw4jVdCe_27KNq_NrHXblGA&e=1735976538&fl=&r=9cbc2288-94a4-4daf-a9f5-febb6c3dc5f1-1&k=lQ5hwvgH0ph3cfi_Y3ewpQ&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=140&s=51MZm9xAA0RDd9Fx52WQITSq3SU&cd=i" alt="Image 5">
+        <div class="legal-note">For entertainment purposes only</div>
+    </footer>
+    <div id="particles-js" class="particles-js-canvas-el"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 100,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: "#ff00cc"
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: "img/github.svg",
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 5,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff00cc",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 100,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
